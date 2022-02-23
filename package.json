@@ -83,6 +83,7 @@
         "@types/async": "^2.4.1",
         "@types/glob-to-regexp": "^0.4.0",
         "@types/node": "^12.0.2",
+        "@types/react-dom": "^17.0.11",
         "async": "^2.6.2",
         "aws-sdk": "^2.814.0",
         "chalk": "^2.4.1",
@@ -97,6 +98,7 @@
         "ora": "^3.0.0",
         "pretty-error": "^2.1.1",
         "proxy-agent": "^3.1.1",
+        "react-dom": "^17.0.2",
         "stream-to-promise": "^2.2.0",
         "yargs": "^15.4.0"
     },
