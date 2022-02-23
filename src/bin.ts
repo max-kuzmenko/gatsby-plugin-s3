@@ -316,6 +316,15 @@ export const deploy = async ({ yes, bucket, userAgent }: DeployArguments = {}) =
                     }
 
                     try {
+                        console.log("\n\n\n\nLOGGED:\n\n\n\n", JSON.stringify({
+                            Bucket: config.bucketName,
+                            Key: key,
+                            Body: redirectLocation,
+                            ACL: config.acl === null ? undefined : config.acl ?? 'public-read',
+                            ContentType: 'application/octet-stream',
+                            WebsiteRedirectLocation: redirectLocation,
+                            ...getParams(key, params),
+                        }), "\n\n\n\n\n\n\n\n")
                         const upload = new S3.ManagedUpload({
                             service: s3,
                             params: {
